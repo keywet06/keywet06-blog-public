@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    hostname: new URL('https://keywet06.blog.wekw.cf').hostname,
+    root: '/',
+    scheme: 'Gemini',
+    version: '7.6.0',
+    exturl: false,
+    sidebar: {"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},
+    copycode: {"enable":true,"show_result":true,"style":"default"},
+    back2top: {"enable":true,"sidebar":true,"scrollpercent":true},
+    bookmark: {"enable":true,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    comments: {"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: 'search.xml',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}
+  };
+</script>
+
+  <meta property="og:type" content="website">
+<meta property="og:title" content="keywet06&#39;s blog">
+<meta property="og:url" content="https://keywet06.blog.wekw.cf/index.html">
+<meta property="og:site_name" content="keywet06&#39;s blog">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="keywet06">
+<meta property="article:tag" content="blog">
+<meta property="article:tag" content=" OI">
+<meta property="article:tag" content=" ACM">
+<meta property="article:tag" content=" OJ">
+<meta property="article:tag" content=" code">
+<meta property="article:tag" content=" math">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://keywet06.blog.wekw.cf/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: true,
+    isPost: false
+  };
+</script>
+
+  <title>keywet06's blog</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">keywet06's blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <p class="site-subtitle">keywet06@WeKw</p>
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签<span class="badge">4</span></a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类<span class="badge">3</span></a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档<span class="badge">2</span></a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+
+</nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none"
+           placeholder="搜索..." spellcheck="false"
+           type="text" id="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result"></div>
+
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
+</div>
+    </header>
+
+    
+  <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+  <a href="https://github.com/keywet06" class="github-corner" title="Follow keywet06 on GitHub" aria-label="Follow keywet06 on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://keywet06.blog.wekw.cf/post/solutionLuoguP3195/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/main.png">
+      <meta itemprop="name" content="keywet06">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="keywet06's blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/post/solutionLuoguP3195/" class="post-title-link" itemprop="url">LuoguP3195 | solution</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-01-28 12:03:33" itemprop="dateCreated datePublished" datetime="2020-01-28T12:03:33+08:00">2020-01-28</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-08-02 18:47:53" itemprop="dateModified" datetime="2020-08-02T18:47:53+08:00">2020-08-02</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/solution/" itemprop="url" rel="index">
+                    <span itemprop="name">solution</span>
+                  </a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/solution/Luogu/" itemprop="url" rel="index">
+                    <span itemprop="name">Luogu</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h3 id="题目大意">题目大意</h3>
+<p>P 教授要去看奥运，但是他舍不下他的玩具，于是他决定把所有的玩具运到北京。他使用自己的压缩器进行压缩，其可以将任意物品变成一堆，再放到一种特殊的一维容器中。</p>
+<p>P 教授有编号为 <span class="math inline">\(1 \cdots n\)</span> 的 <span class="math inline">\(n\)</span> 件玩具，第 <span class="math inline">\(i\)</span> 件玩具经过压缩后的一维长度为 <span class="math inline">\(C_i\)</span>。</p>
+<p>为了方便整理，P教授要求：</p>
+<ul>
+<li>在一个一维容器中的玩具编号是连续的。</li>
+<li>同时如果一个一维容器中有多个玩具，那么两件玩具之间要加入一个单位长度的填充物。形式地说，如果将第 <span class="math inline">\(i\)</span> 件玩具到第 <span class="math inline">\(j\)</span> 个玩具放到一个容器中，那么容器的长度将为 <span class="math inline">\(x=j-i+\sum\limits_{k=i}^{j}C_k\)</span>。</li>
+</ul>
+<p>制作容器的费用与容器的长度有关，根据教授研究，如果容器长度为 <span class="math inline">\(x\)</span>，其制作费用为 <span class="math inline">\((x-L)^2\)</span>。其中 <span class="math inline">\(L\)</span> 是一个常量。P 教授不关心容器的数目，他可以制作出任意长度的容器，甚至超过 <span class="math inline">\(L\)</span>。但他希望所有容器的总费用最小。</p>
+<h3 id="思路">思路</h3>
+<h4 id="公式推导">公式推导</h4>
+<p><span class="math display">\[
+令 f_i 表示前 i 个物品制作容器的最小费用 ， sum_i = \sum_{k = 1}^{i} C_k\\
+由题意得 f_i = min\{ f_j + (i - j - 1 + sum_i - sum_j - L)^2 \ |\ j \in [1, i - 1] \}\\
+令 a_i = sum_i + i ，  L&#39; = L + 1\\
+\therefore f_i = f_j + (a_i - a_j - L&#39;)^2\\
+若决策j_2优于决策j_1(j_1 &lt; j_2)\\
+\therefore f_{j_1} + (a_i - a_{j_1} - L&#39;)^2 \ge f_{j_2} + (a_i - a_{j_2} - L&#39;)^2\\
+\therefore 2 a_i(a_{j_2} + L&#39;) - 2 a_i(a_{j_1} + L&#39;) \ge f_{j_2} + (a_{j_2} + L&#39;)^2 - f_{j_1} - (a_{j_1} + L&#39;)^2\\
+令 b_i = f_{i} + (a_{i} + L&#39;)^2\\
+\therefore 2 a_i(a_{j_2} - a_{j_1}) \ge b_{j_2} - b_{j_1}\\
+\therefore 2 a_i \ge \frac{b_{j_2} - b_{j_1}}{a_{j_2} - a_{j_1}}\\
+\]</span></p>
+<h4 id="做法">做法</h4>
+<p>首先将已经决策完毕的部分按 <span class="math inline">\((a_i, b_i)​\)</span> 画在平面直角坐标系上</p>
+<p>在按 <span class="math inline">\(2a_i\)</span> 与斜率的大小决定在单调队列上决策点的取舍</p>
+<p>相当于用单调队列维护下凸包</p>
+<h3 id="代码">代码</h3>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> N = <span class="number">50000</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> Np = N + <span class="number">5</span>;</span><br><span class="line"><span class="keyword">long</span> <span class="keyword">long</span> n, L, Lp, head, tail;</span><br><span class="line"><span class="keyword">long</span> <span class="keyword">long</span> a[Np], b[Np], c[Np], f[Np], s[Np];</span><br><span class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> _Tp&gt;</span><br><span class="line">  <span class="function">_Tp <span class="title">sqr</span><span class="params">(_Tp x)</span></span>;</span><br><span class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> _Tp&gt;</span><br><span class="line">  <span class="function">_Tp <span class="title">sqr</span> <span class="params">(_Tp x)</span> </span>&#123; <span class="keyword">return</span> x * x; &#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="built_in">std</span>::ios::sync_with_stdio(<span class="number">0</span>);</span><br><span class="line">    <span class="built_in">std</span>::<span class="built_in">cin</span>.tie(<span class="number">0</span>);</span><br><span class="line">    <span class="built_in">std</span>::<span class="built_in">cout</span>.tie(<span class="number">0</span>);</span><br><span class="line">    <span class="built_in">std</span>::<span class="built_in">cin</span> &gt;&gt; n &gt;&gt; L;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; ++i) &#123;</span><br><span class="line">        <span class="built_in">std</span>::<span class="built_in">cin</span> &gt;&gt; c[i];</span><br><span class="line">        a[i] = a[i - <span class="number">1</span>] + c[i] + <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    Lp = L + <span class="number">1</span>;</span><br><span class="line">    b[<span class="number">0</span>] = sqr(Lp);</span><br><span class="line">    head = <span class="number">1</span>;</span><br><span class="line">    tail = <span class="number">0</span>;</span><br><span class="line">    s[++tail] = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; ++i) &#123;</span><br><span class="line">        <span class="keyword">while</span> (head &lt; tail &amp;&amp; <span class="number">1.0</span> * ((b[s[head + <span class="number">1</span>]] - b[s[head]]) /</span><br><span class="line">          (a[s[head + <span class="number">1</span>]] - a[s[head]]) &lt;= <span class="number">2</span> * a[i] )) &#123;</span><br><span class="line">            ++head;</span><br><span class="line">        &#125;</span><br><span class="line">        f[i] = f[s[head]] + sqr(a[i] - a[s[head]] - Lp);</span><br><span class="line">        b[i] = f[i] + sqr(a[i] + Lp);</span><br><span class="line">        <span class="keyword">while</span> (head &lt; tail &amp;&amp; <span class="number">1.0</span> * (b[i] - b[s[tail]]) / (a[i] - a[s[tail]]) &lt;=</span><br><span class="line">          <span class="number">1.0</span> * (b[s[tail]] - b[s[tail - <span class="number">1</span>]]) / (a[s[tail]] - a[s[tail - <span class="number">1</span>]])) &#123;</span><br><span class="line">            --tail;</span><br><span class="line">        &#125;</span><br><span class="line">        s[++tail] = i;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">std</span>::<span class="built_in">cout</span> &lt;&lt; f[n] &lt;&lt; <span class="built_in">std</span>::<span class="built_in">endl</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://keywet06.blog.wekw.cf/post/THUWC2020/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/main.png">
+      <meta itemprop="name" content="keywet06">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="keywet06's blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/post/THUWC2020/" class="post-title-link" itemprop="url">THUWC2020</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-12-27 18:27:33" itemprop="dateCreated datePublished" datetime="2019-12-27T18:27:33+08:00">2019-12-27</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-08-02 18:44:02" itemprop="dateModified" datetime="2020-08-02T18:44:02+08:00">2020-08-02</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%B8%B8%E8%AE%B0/" itemprop="url" rel="index">
+                    <span itemprop="name">游记</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="day--11">Day -11</h2>
+<ul>
+<li>发现自己 <del>只</del> 比一等分数线高 <span class="math inline">\(39\)</span> 分</li>
+<li><del>浙江</del> 。。。</li>
+<li>赶紧报名 <span class="math inline">\(THUWC\)</span></li>
+</ul>
+<h2 id="day--4">Day -4</h2>
+<ul>
+<li>自己居然过了 <span class="math inline">\(THUWC\)</span></li>
+<li>机房一 <span class="math inline">\(341\)</span> 巨佬 <span class="math inline">\(PKUWC\)</span> 没过</li>
+</ul>
+<h2 id="day--1">Day -1</h2>
+<ul>
+<li>好紧张啊明天就要去首都了</li>
+</ul>
+<h2 id="day-0">Day 0</h2>
+<ul>
+<li>飞机上抢到了靠窗位置</li>
+<li>紧张的一匹</li>
+<li><del>北京的地铁太堵了</del></li>
+<li>到宾馆发现先走的老师和同学们先去 <span class="math inline">\(PKU\)</span> 报道了</li>
+<li><del>在宾馆等了半个小时才</del> 发现可以直接开房间</li>
+</ul>
+<h2 id="day-1">Day 1</h2>
+<ul>
+<li>一大早到了 <span class="math inline">\(THU\)</span></li>
+<li>报到送 <code>精品围巾</code> ？？？</li>
+<li>试机 <code>A+B</code> ？？？</li>
+<li>几位巨佬教授开始讲清华有多菜 <del>（牛）</del></li>
+<li>比如说 <code>THU 计算机系被评上世界第一我们也没办法</code> 。。。</li>
+<li>下午考试只乱七八糟拿了 <span class="math inline">\(102pts\)</span></li>
+<li><span class="math inline">\(20pts\)</span> 暴力没调出来。。。</li>
+<li>看着同年级初二 <a href="//www.luogu.com.cn/user/35672" target="_blank" rel="noopener">skc巨佬</a> 拿了 <span class="math inline">\(120+\)</span> 慌的一批</li>
+<li>完了初一 <a href="//www.luogu.com.cn/user/35347" target="_blank" rel="noopener">wzf巨佬</a> 都比我高</li>
+<li>回宾馆只敢睡觉了</li>
+</ul>
+<h2 id="day-2">Day 2</h2>
+<ul>
+<li>清早就 <span class="math inline">\(Round\ 1\)</span></li>
+<li>一开始打了 <span class="math inline">\(T1\ 30pts\)</span></li>
+<li>后来一看感觉很水打了一个假 <span class="math inline">\(100\)</span></li>
+<li>交上去 <span class="math inline">\(Wrong\ Answer\ 0\)</span></li>
+<li>发现正解是假的</li>
+<li>然后加了 <del>反正还是错的</del> 辣鸡贪心</li>
+<li>竟然 <span class="math inline">\(70pts\)</span> <del>（还是只错了Subtask 1）</del></li>
+<li>然后和暴力整合一下就 <span class="math inline">\(A\)</span> 了</li>
+<li><span class="math inline">\(30\ min\ 30pts\)</span> 暴力没调出来。。。</li>
+<li>只有 <span class="math inline">\(100pts\)</span> 了</li>
+<li>不过貌似很多人考的都没有昨天好 <del>（我也是啊</del></li>
+<li>中午吃过午饭与 <a href="#">skc巨佬</a> 和 <a href="//www.luogu.com.cn/user/35347" target="_blank" rel="noopener">wzf巨佬</a> 在清华园散步 <del>（闲逛）</del></li>
+<li>然后吃了鸡腿匆忙赶向考场</li>
+<li><span class="math inline">\(Round\ 2\)</span> 果然是传说中的工程题</li>
+<li><span class="math inline">\(CPU,\ Cache,\ Memory\)</span> ？？？</li>
+<li>说明文档开考 <span class="math inline">\(5min\)</span> 才发下来</li>
+<li><span class="math inline">\(A\)</span> 掉 <span class="math inline">\(T1,\ T2\)</span> 然后发现 <span class="math inline">\(T3\)</span> <span class="math inline">\(CE\)</span></li>
+<li>开始慌，然后到最后到调不出来</li>
+<li>只有 <span class="math inline">\(96pts\)</span> 了</li>
+<li><span class="math inline">\(3\)</span> 场考试只有 <span class="math inline">\(102 + 100 + 96 = 298pts\)</span></li>
+<li><span class="math inline">\(300pts\)</span> 都没到。。。</li>
+<li>看来今年凉了</li>
+</ul>
+<h2 id="day-3">Day 3</h2>
+<ul>
+<li>不出意料没接到电话</li>
+<li>然后去天安门闲逛</li>
+<li>博物馆周一闭馆</li>
+<li>天安门、人民大会堂据说有中日韩三国领导人会议</li>
+<li>然后只能去天坛</li>
+<li>匆匆忙忙听了半个讲座就去机场了</li>
+</ul>
+<h2 id="后记">后记</h2>
+<ul>
+<li>感觉自己还是码力不足</li>
+<li>一堆 <span class="math inline">\(bug\)</span></li>
+<li>要是没有的话就多了 <span class="math inline">\(20 + 30 + 70 = 120pts\)</span> 。。。</li>
+<li>感觉自闭了</li>
+<li>明年加油吧</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+  </div>
+
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let activeClass = CONFIG.comments.activeClass;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="keywet06"
+      src="/images/main.png">
+  <p class="site-author-name" itemprop="name">keywet06</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/keywet06" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;keywet06" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:keywet06@gmail.com" title="E-Mail → mailto:keywet06@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://plus.google.com/keywet06" title="Google → https:&#x2F;&#x2F;plus.google.com&#x2F;keywet06" rel="noopener" target="_blank"><i class="fa fa-fw fa-google"></i>Google</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.luogu.org/space/show?uid=125917" title="Luogu → https:&#x2F;&#x2F;www.luogu.org&#x2F;space&#x2F;show?uid&#x3D;125917" rel="noopener" target="_blank"><i class="fa fa-fw fa-code"></i>Luogu</a>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+
+      </div>
+        <div class="back-to-top motion-element">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">keywet06</span>
+</div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  
+  <script color='0,0,255' opacity='0.5' zIndex='-1' count='99' src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+<script src="/js/bookmark.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+      
+<script type="text/x-mathjax-config">
+    MathJax.Ajax.config.path['mhchem'] = '//cdn.jsdelivr.net/npm/mathjax-mhchem@3';
+
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$', '$'], ['\\(', '\\)'] ],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+        extensions: ['[mhchem]/mhchem.js'],
+      equationNumbers: {
+        autoNumber: 'AMS'
+      }
+    }
+  });
+
+  MathJax.Hub.Register.StartupHook('TeX Jax Ready', function() {
+    MathJax.InputJax.TeX.prefilterHooks.Add(function(data) {
+      if (data.display) {
+        var next = data.script.nextSibling;
+        while (next && next.nodeName.toLowerCase() === '#text') {
+          next = next.nextSibling;
+        }
+        if (next && next.nodeName.toLowerCase() === 'br') {
+          next.parentNode.removeChild(next);
+        }
+      }
+    });
+  });
+
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for (i = 0; i < all.length; i += 1) {
+      element = document.getElementById(all[i].inputID + '-Frame').parentNode;
+      if (element.nodeName.toLowerCase() == 'li') {
+        element = element.parentNode;
+      }
+      element.classList.add('has-jax');
+    }
+  });
+</script>
+<script>
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_HTMLorMML', () => {
+    MathJax.Hub.Typeset();
+  }, window.MathJax);
+</script>
+
+    
+
+  
+
+  
+  <script type="text/javascript" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+  
+</body>
+</html>
