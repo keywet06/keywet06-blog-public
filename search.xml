@@ -134,7 +134,7 @@
   </entry>
   <entry>
     <title>ARC101C | solution</title>
-    <url>/post/sollutionARC101C/</url>
+    <url>/post/solutionARC101C/</url>
     <content><![CDATA[<h3 id="题目大意">题目大意</h3>
 <ul>
 <li>选择 <span class="math inline">\(\frac{n}{2}\)</span> 对点，要求每条边必被至少一个点对的树上路径经过</li>
